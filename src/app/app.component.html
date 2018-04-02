@@ -1,3 +1,15 @@
 <h1>
-  {{title}}
+  {{title}} Value is {{data}}
 </h1>
+
+gg <input type="checkbox" appIcheck value="gg">
+<br>
+BB <input type="checkbox" appIcheck value="BB">
+<br>
+cc <input type="checkbox" appIcheck value="cc"> 
+<br>
+
+<button (click)="onClick($event)">Get Data</button>
+<br>
+<br>
+Check All <input type="checkbox" (change)="checkAll($event)" [(ngModel)]="checkAllValue">
